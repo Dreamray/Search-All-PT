@@ -118,6 +118,9 @@
 				<iframe data-src='https://hdcmct.org/torrents.php' data-name='CMCT' frameborder='0'></iframe>
 			</div>
 			<div class="swiper-slide">
+				<iframe data-src='https://hdcity.leniter.org/pt' data-name='HDCity' frameborder='0'></iframe>
+			</div>
+			<div class="swiper-slide">
 				<iframe data-src='https://ourbits.club/torrents.php' data-name='OurBits' frameborder='0'></iframe>
 			</div>
 			<div class="swiper-slide">
@@ -168,7 +171,7 @@
 		<div id="search" class="search">
 			<i><textarea onkeypress="if(event.keyCode==13) return false;" id='seinput' placeholder="一键搜索" type="text"></textarea></i>
 		</div>
-		<div id="menu" class='menu clearfix'></div>
+		<div id="menu" class="menu clearfix"></div>
 	</div>
 	<script>
 		//resize width height
@@ -181,7 +184,7 @@
 			resizeWH();
 		});
 		// 生成右侧pt名为nav，生成url、name
-		$("iframe").each(function(ifIndex){
+		$('iframe').each(function(ifIndex){
 			var ptname = $(this).attr('data-name'),
 			    url    = $(this).attr('data-src'),
 				date   = new Date();
@@ -200,7 +203,7 @@
 			createPagination:false,
 		});
 		//搜索
-		$(window).keyup(function(b){
+		$(window).keydown(function(b){
 			if(b.keyCode==27){//Esc键失焦
 				$('#seinput').blur();
 			}
@@ -213,7 +216,7 @@
 				$(this).select();
 			};
 			$('#search').addClass('se-anim');
-		}).blur(function(){
+		},{}).blur(function(){
 			$('#search').removeClass('se-anim');
 			$(this).attr('placeholder','一键搜索');
 		});
@@ -225,11 +228,17 @@
 			            url        = $(this).attr('data-src');
 					if(ifdataname=='M-Team'||ifdataname=='CHDBits'||ifdataname=='HDSky'||ifdataname=='HDQueen'||ifdataname=='HDHome'||ifdataname=='TLFBits'||ifdataname=='OurBits'||ifdataname=='TCCF'||ifdataname=='HDTime'||ifdataname=='HDUpxin'||ifdataname=='TTHD'||ifdataname=='BTSchool'||ifdataname=='GZTown'||ifdataname=='NanFeng'||ifdataname=='JoyHD'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
-					}else if(ifdataname=='TTGlory'){
+					}
+					if(ifdataname=='HDCity'){
+						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&iwannaseethis=' + keywords)
+					}
+					if(ifdataname=='TTGlory'){
 						$(this).attr('src', url + '&search_field=' + keywords)
-					}else if(ifdataname=='HDChina'){
+					}
+					if(ifdataname=='HDChina'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&boardid=0&seeders=&search_area=0&search_mode=0&search=' + keywords)
-					}else if(ifdataname=='CMCT'){
+					}
+					if(ifdataname=='CMCT'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&pick=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
 					}
 				});
