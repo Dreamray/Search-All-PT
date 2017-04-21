@@ -228,24 +228,19 @@
 			            url        = $(this).attr('data-src');
 					if(ifdataname=='M-Team'||ifdataname=='CHDBits'||ifdataname=='HDSky'||ifdataname=='HDQueen'||ifdataname=='HDHome'||ifdataname=='TLFBits'||ifdataname=='OurBits'||ifdataname=='TCCF'||ifdataname=='HDTime'||ifdataname=='HDUpxin'||ifdataname=='TTHD'||ifdataname=='BTSchool'||ifdataname=='GZTown'||ifdataname=='NanFeng'||ifdataname=='JoyHD'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
-					}
-					if(ifdataname=='HDCity'){
+					}else if(ifdataname=='HDCity'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&iwannaseethis=' + keywords)
-					}
-					if(ifdataname=='TTGlory'){
+					}else if(ifdataname=='TTGlory'){
 						$(this).attr('src', url + '&search_field=' + keywords)
-					}
-					if(ifdataname=='HDChina'){
+					}else if(ifdataname=='HDChina'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&boardid=0&seeders=&search_area=0&search_mode=0&search=' + keywords)
-					}
-					if(ifdataname=='CMCT'){
+					}else if(ifdataname=='CMCT'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&pick=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
 					}
 				});
 				$('#search').removeClass('se-anim');
 				$(this).attr('placeholder','一键搜索');
 				$(this).blur();
-				$(this).val(keywords);
 			}
 		});
 		//一键签到，跨域问题无解
