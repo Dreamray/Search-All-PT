@@ -154,7 +154,7 @@
 				<iframe data-src='https://pt.nfcoco.com/torrents.php' data-name='NanFeng' frameborder='0'></iframe>
 			</div>
 			<div class="swiper-slide">
-				<iframe data-src='http://pt.gztown.net/torrents.php' data-name='GZTown' frameborder='0'></iframe>
+				<iframe data-src='https://wtfudl.com/torrents.php' data-name='WTFUDL' frameborder='0'></iframe>
 			</div>
 			<div class="swiper-slide">
 				<iframe data-src='https://open.cd/torrents.php?boardid=1' data-name='OpenCD' frameborder='0'></iframe>
@@ -226,7 +226,7 @@
 				$("iframe").each(function(){
 					var ifdataname = $(this).attr('data-name'),
 			            url        = $(this).attr('data-src');
-					if(ifdataname=='M-Team'||ifdataname=='CHDBits'||ifdataname=='HDSky'||ifdataname=='HDQueen'||ifdataname=='HDHome'||ifdataname=='TLFBits'||ifdataname=='OurBits'||ifdataname=='TCCF'||ifdataname=='HDTime'||ifdataname=='HDUpxin'||ifdataname=='TTHD'||ifdataname=='BTSchool'||ifdataname=='GZTown'||ifdataname=='NanFeng'||ifdataname=='JoyHD'){
+					if(ifdataname=='M-Team'||ifdataname=='CHDBits'||ifdataname=='HDSky'||ifdataname=='HDQueen'||ifdataname=='HDHome'||ifdataname=='TLFBits'||ifdataname=='OurBits'||ifdataname=='TCCF'||ifdataname=='HDTime'||ifdataname=='HDUpxin'||ifdataname=='TTHD'||ifdataname=='BTSchool'||ifdataname=='GZTown'||ifdataname=='NanFeng'||ifdataname=='JoyHD'||ifdataname='WTFUDL'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
 					}else if(ifdataname=='HDCity'){
 						$(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&iwannaseethis=' + keywords)
