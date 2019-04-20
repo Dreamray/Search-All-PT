@@ -12,6 +12,6 @@
 	<li><h2>只添加了我已有账号的PT站点</h2></li>
 	<li><h2>所有站点均为默认搜索条件（即不对搜索箱进行条件筛选）</h2></li>
 </ul>
-有js基础者，可自行添加站点，我没有账号的站点因不知其搜索结果页的url查询组成故无法添加。可联系下方我的支付宝或微信添加或发站点邀请给我<br><br>
+有js基础者，可自行添加站点，我没有账号的站点因不知其搜索结果页的url查询组成故无法添加。可联系下方我的支付宝或微信或邮箱imxray#163发站点邀请给我<br><br>
 如果你觉得此工具有用，请捐赠我:<br>
 <img src="https://raw.githubusercontent.com/Dreamray/Search-All-PT/master/donate/donate.jpg" alt="">
