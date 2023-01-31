@@ -13,5 +13,3 @@
 	<li><h2>所有站点均为默认搜索条件（即不修改搜索箱的默认筛选条件）</h2></li>
 </ul>
 有js基础者，可自行添加站点，我没有账号的站点因不知其搜索结果页的url查询组成故无法添加。可联系下方我的支付宝或微信或邮箱imxray#163发站点邀请给我<br><br>
-如果你觉得此工具有用，请捐赠我:<br>
-<img src="https://raw.githubusercontent.com/Dreamray/Search-All-PT/master/donate/donate.jpg" alt="">
